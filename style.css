@@ -1,16 +1,47 @@
 #header {
 	font-family:arial;
-	background-color:grey;
+	background-color: grey;
 	color:white;
 	text-align:center;
 	padding:5px;
+	display:none;
 }
 #section {
 	font-family:arial;
-	background-color:#eeeeee;
-	width:500px;
+	background-color:transparent;
+	width:70%;
 	margin-top:5px;
 	margin-left:auto;
 	margin-right:auto;
 	padding:10px;
+	height:500px;
+}
+#box {
+	width:80%;
+	height:93%;
+	border:1px solid grey;
+	float:right;
+	position:relative;
+	top:7%;
+}
+#title {
+	float:left;
+	font-family:Trebuchet MS;
+	color:grey;
+	font-size:120%;
+}
+#nav {
+	float:left;
+	font-family:arial;
+	color:grey;
+	font-size:75%;
+	position:fixed;
+	bottom:20%;
+}
+#image {
+	width:60%;
+	margin-left:auto;
+	margin-right:auto;
+	display:none;
+	position:fixed;
 }

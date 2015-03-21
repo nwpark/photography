@@ -3,26 +3,38 @@
 <head>
 	<title>Hannah's Website</title>
 	<link rel="stylesheet" href="style.css">
+	<script src="script.js"></script>
 </head>
 
 <body>
-
 <div id="header">
 	<h1>Home Page</h1>
 </div>
 
 <div id="section">
-	<h3>Content</h3>
-	<p>
-	text text text text text text text text text
-	text text text text text text text text text
-	text text text text text text text text text
-	text text text text text text text text text
-	text text text text text text text text text
-	text text text text text text text text text
-	text text text text text text text text text
-	</p>
-	<img src="Desert.jpg" style="width:100%">
+	<div id="title">
+		<h3>HANNAH PARK</h3>
+	</div>
+	<div id="nav">
+		<p>
+			ABOUT <br>
+			CONTACT <br>
+			EDITORIAL <br>
+			LONDON FASHION WEEK <br>
+			FLATS <br>
+			FUTURISM <br>
+			LINGERIE <br>
+			NARRATIVES <br>
+			BEAUTY PORTRAITS <br>
+		</p>
+	</div>
+	<div id="box">
+		<img id="mainImage" onClick="nextImage()" src="futurism\hananh.jpg" style="height:100%; float:right">
+	</div>
+</div>
+
+<div id="image">
+	<img id="largeImage" onClick="hideLargeImage()" style="width:100%">
 </div>
 
 </body>
