@@ -1,47 +1,57 @@
-#header {
-	font-family:arial;
-	background-color: grey;
-	color:white;
-	text-align:center;
-	padding:5px;
-	display:none;
-}
 #section {
 	font-family:arial;
 	background-color:transparent;
-	width:70%;
+	width:65%;
 	margin-top:5px;
 	margin-left:auto;
 	margin-right:auto;
 	padding:10px;
 	height:500px;
 }
-#box {
+#rightSection {
 	width:80%;
-	height:93%;
-	border:1px solid grey;
+	background-color:transparent;
 	float:right;
+	height:500px;
 	position:relative;
 	top:7%;
 }
-#title {
+#leftSection {
+	width:20%;
+	background-color:transparent;
+	height:500px;
 	float:left;
+}
+#box {
+	width:100%;
+	height:400px;
+	background-color:white;
+	border:1px solid grey;
+	float:right;
+}
+#lowerBox {
+	width:100%;
+	height:80px;
+	background-color:white;
+	position:relative;
+	bottom:-40px;
+	box-sizing: border-box;
+}
+#title {
 	font-family:Trebuchet MS;
 	color:grey;
 	font-size:120%;
 }
 #nav {
-	float:left;
 	font-family:arial;
 	color:grey;
 	font-size:75%;
-	position:fixed;
-	bottom:20%;
+	position:relative;
+	top:240px;
 }
 #image {
 	width:60%;
 	margin-left:auto;
 	margin-right:auto;
 	display:none;
-	position:fixed;
 }

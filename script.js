@@ -1,12 +1,9 @@
-function changeImage() {
-	var image = document.getElementById('image1')
-	if(image.src.match("Desert")) {
-		image.src = "Jellyfish.jpg";
-	}
-	else {
-		image.src = "Desert.jpg";
-	}
-}
+var futurismPics = ["futurism/SECOND CUP.jpg", 
+			"futurism/ROSE TEST.jpg", 
+			"futurism/PINEAPPLE.jpg", 
+			"futurism/IMG_9245.jpg",
+			"futurism/hananh.jpg"]
+var i = 0;
 function resizeImage() {
 	var image = document.getElementById('image1');
 	if(image.style.width.match('50%')) {
@@ -21,20 +18,33 @@ function hideLargeImage() {
 	imageVar.style.display = 'none';
 }
 function showLargeImage() {
-	var picture = "deserts";
-	var imageVar = document.getElementById('image');
-	if(picture == "deserts") {
-		document.getElementById('largeImage').src = document.getElementById('desert').src;
-	}
-	else {
-		document.getElementById('largeImage').src = document.getElementById('jellyfish').src;
-	}
-	imageVar.style.display = 'block';
-	imageVar.style.position = 'fixed';
-	imageVar.style.top = '30px';
-	imageVar.style.left = '20%';
+	var largeImageDiv = document.getElementById('image');
+	var picture = document.getElementById('mainImage');
+	var largePicture = document.getElementById('largeImage');
+	largePicture.src = picture.src;
+	largeImageDiv.style.display = 'block';
+	largeImageDiv.style.position = 'fixed';
+	largeImageDiv.style.top = '30px';
+	largeImageDiv.style.left = '20%';
 }
 function nextImage() {
 	var picture = document.getElementById('mainImage');
-	picture.src = 'Documents\GitHub\test\ROSE TEST.jpg';
+	i++;
+	if(futurismPics[i] != null) {
+		picture.src = futurismPics[i];
+		document.getElementById('imageName').innerHTML = "test";
+	}
+	else {
+		i = 0;
+	}
+}
+function prevImage() {
+	var picture = document.getElementById('mainImage');
+	i--;
+	if(futurismPics[i] != null) {
+		picture.src = futurismPics[i];
+	}
+	else {
+		i = 4;
+	}
 }
