@@ -18,8 +18,8 @@ function showLargeImage() {
 	largePicture.src = picture.src;
 	largeImageDiv.style.display = 'block';
 	largeImageDiv.style.position = 'fixed';
-	largeImageDiv.style.top = '30px';
-	largeImageDiv.style.left = '20%';
+	largeImageDiv.style.top = '0px';
+	largeImageDiv.style.left = '10%';
 }
 function nextImage() {
 	var picture = document.getElementById('mainImage');
@@ -48,16 +48,6 @@ function prevImage() {
 		picture.src = futurismPics[i];
 	}
 	else {
-		i = 4;
+		i = futurismPics.length;
 	}
-}
-function hideBoxes() {
-	document.getElementById('rightSection').style.display = "none";
-	document.getElementById('flatsSection').style.display = "none";
-}
-function showFuturism() {
-	document.getElementById('content').src = "futurism.html";
-}
-function showFlats() {
-	document.getElementById('content').src = "flats.html";
 }
