@@ -3,16 +3,10 @@ var futurismPics = ["futurism/SECOND CUP.jpg",
 			"futurism/PINEAPPLE.jpg", 
 			"futurism/IMG_9245.jpg",
 			"futurism/hananh.jpg"]
+var flatsPics = ["flats/10574490_916149055066311_9166328785546283049_n.jpg",
+			"flats/10570496_916149141732969_7109096628975262258_n.jpg",
+			"flats/10551061_916148528399697_2928115284938901327_n.jpg",]
 var i = 0;
-function resizeImage() {
-	var image = document.getElementById('image1');
-	if(image.style.width.match('50%')) {
-		image.style.width = '100%';
-	}
-	else {
-		image.style.width = '50%'
-	}
-}
 function hideLargeImage() {
 	var imageVar = document.getElementById('image');
 	imageVar.style.display = 'none';
@@ -32,7 +26,16 @@ function nextImage() {
 	i++;
 	if(futurismPics[i] != null) {
 		picture.src = futurismPics[i];
-		document.getElementById('imageName').innerHTML = "test";
+	}
+	else {
+		i = 0;
+	}
+}
+function nextFlats() {
+	var picture = document.getElementById('flatsImage');
+	i++;
+	if(flatsPics[i] != null) {
+		picture.src = flatsPics[i];
 	}
 	else {
 		i = 0;
@@ -47,4 +50,14 @@ function prevImage() {
 	else {
 		i = 4;
 	}
+}
+function hideBoxes() {
+	document.getElementById('rightSection').style.display = "none";
+	document.getElementById('flatsSection').style.display = "none";
+}
+function showFuturism() {
+	document.getElementById('content').src = "futurism.html";
+}
+function showFlats() {
+	document.getElementById('content').src = "flats.html";
 }

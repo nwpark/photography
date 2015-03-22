@@ -6,15 +6,15 @@
 	margin-left:auto;
 	margin-right:auto;
 	padding:10px;
-	height:500px;
+	height:700px;
 }
 #rightSection {
 	width:80%;
 	background-color:transparent;
 	float:right;
-	height:500px;
+	height:700px;
 	position:relative;
-	top:7%;
+	top:5%;
 }
 #leftSection {
 	width:20%;
@@ -27,15 +27,15 @@
 	height:400px;
 	background-color:white;
 	border:1px solid grey;
-	float:right;
+	
 }
 #lowerBox {
 	width:100%;
 	height:80px;
 	background-color:white;
-	position:relative;
-	bottom:-40px;
 	box-sizing: border-box;
+	position:relative;
+	top:30px;
 }
 #title {
 	font-family:Trebuchet MS;
@@ -54,4 +54,21 @@
 	margin-left:auto;
 	margin-right:auto;
 	display:none;
+}
+
+a:link {
+	color:grey;
+	text-decoration:none;
+}
+a:visited {
+	color:grey;
+	text-decoration:none;
+}
+a:hover {
+	color:black;
+	text-decoration:none;
+}
+a:active {
+	color:black;
+	text-decoration:none;
 }

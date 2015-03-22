@@ -7,6 +7,8 @@
 	<style>
 	body {
 		background-image:url("background.jpg");
+		background-repeat:no-repeat;
+		background-attachment:fixed;
 	}
 	</style>
 </head>
@@ -19,31 +21,20 @@
 		</div>
 		<div id="nav">
 			<p>
-				ABOUT <br>
-				CONTACT <br>
-				EDITORIAL <br>
-				LONDON FASHION WEEK <br>
-				FLATS <br>
-				FUTURISM <br>
-				LINGERIE <br>
-				NARRATIVES <br>
-				BEAUTY PORTRAITS <br>
+				<a href="about.html" target="iframe_content">ABOUT</a><br>
+				<a href="contact.html" target="iframe_content">CONTACT</a><br>
+				<a href="editorial.html" target="iframe_content">EDITORIAL</a><br>
+				<a href="london_fashion_week.html" target="iframe_content">LONDON FASHION WEEK</a><br>
+				<a href="flats.html" target="iframe_content">FLATS</a><br>
+				<a href="futurism.html" target="iframe_content">FUTURISM</a><br>
+				<a href="lingerie.html" target="iframe_content">LINGERIE</a><br>
+				<a href="narratives.html" target="iframe_content">NARRATIVES</a><br>
+				<a href="beauty_portraits.html" target="iframe_content">BEAUTY PORTRAITS</a><br>
 			</p>
 		</div>
 	</div>
 	<div id="rightSection">
-		<div id="box">
-			<img id="mainImage" onClick="showLargeImage()" src="futurism\SECOND CUP.jpg" style="height:100%; float:right">
-		</div>
-		<button type="button" onclick="prevImage()">Prev</button>
-		<button type="button" onclick="nextImage()">Next</button>
-		<div id="lowerBox">
-			<img src="futurism\SECOND CUP.jpg" style="height:100%; float:left">
-			<img src="futurism\ROSE TEST.jpg" style="height:100%; float:left; margin-left:10px">
-			<img src="futurism\PINEAPPLE.jpg" style="height:100%; float:left; margin-left:10px">
-			<img src="futurism\IMG_9245.jpg" style="height:100%; float:left; margin-left:10px">
-			<img src="futurism\hananh.jpg" style="height:100%; align:center; margin-left:10px">
-		</div>
+		<iframe id="content" name="iframe_content" src="futurism.html" style="border:none" width="100%" height="100%"></iframe>
 	</div>
 </div>
 
