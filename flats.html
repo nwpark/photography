@@ -8,27 +8,30 @@
 
 <body>
 
-<div id="box">
-	<img id="mainImage" onClick="showLargeImage()" src="flats/10574490_916149055066311_9166328785546283049_n.jpg" style="height:100%; float:right">
-</div>
-<img src="next.jpg" type="button" onClick="nextImage()" style="width:30px; float:right">
-<img src="prev.jpg" type="button" onClick="prevImage()" style="width:30px; float:right; position:relative; right:10px">
-<div id="lowerBox">
-	<img src="flats/10574490_916149055066311_9166328785546283049_n.jpg"  onClick="changeMainImage(0)" style="height:100%; float:left; opacity:0.6;">
-	<img src="flats/10570496_916149141732969_7109096628975262258_n.jpg" onClick="changeMainImage(1)" style="height:100%; float:left; margin-left:10px">
-	<img src="flats/10551061_916148528399697_2928115284938901327_n.jpg" onClick="changeMainImage(2)" style="height:100%; float:left; margin-left:10px">
-	<img src="flats/10527332_916148831733000_6703671114500597545_n.jpg" onClick="changeMainImage(3)" style="height:100%; float:left; margin-left:10px">
-	<img src="flats/10418909_916147995066417_5982149672785673479_n.jpg" onClick="changeMainImage(4)" style="height:100%; float:left; margin-left:10px">
-	<img src="flats/10392409_916148698399680_5145691371804763473_n.jpg" onClick="changeMainImage(5)" style="height:100%; float:left; margin-left:10px">
-	<img src="flats/10377164_916148838399666_7791326558864167979_n.jpg" onClick="changeMainImage(6)" style="height:100%; float:left; margin-left:10px">
-	<img src="flats/10355722_916148251733058_3549712943006763498_n.jpg" onClick="changeMainImage(7)" style="height:100%; float:left; margin-left:10px">
-	<img src="flats/1458707_916148071733076_7972319385168546822_n.jpg" onClick="changeMainImage(8)" style="height:100%; float:left; margin-left:10px">
-	<img src="flats/995614_916148801733003_3320039399786898288_n.jpg" onClick="changeMainImage(9)" style="height:100%; float:left; margin-left:10px">
-	<img src="flats/7357_916149121732971_4074852418261063885_n.jpg" onClick="changeMainImage(10)" style="height:100%; float:left; margin-left:10px">
-</div>
-
 <div id="image">
-	<img id="largeImage" onClick="hideLargeImage()" style="width:100%">
+	<img id="largeImage" onClick="hideLargeImage()" title="Click to reduce size" style="max-width:100%; max-height:100%; float:right; opacity:1">
+</div>
+<div id="box">
+	<img id="mainImage" onClick="showLargeImage()" src="flats/10574490_916149055066311_9166328785546283049_n.jpg" style="height:100%; float:right; opacity:1">
+</div>
+<div id="boxFooter">
+	<img src="next.jpg" type="button" onClick="nextImage()" style="width:30px; float:right; position:relative; top:1px">
+	<img src="prev.jpg" type="button" onClick="prevImage()" style="width:30px; float:right; position:relative; right:10px; top:1px">
+	<button type="button" onClick="showLargeImage()" style="float:right; position:relative; right: 20px; top:2px">Enlarge</button>
+	<button type="button" onClick="hideThumbnails()" style="float:right; position:relative; right: 25px; top:2px">Toggle Thumbnails</button>
+</div>
+<div id="lowerBox">
+	<img id="image0" src="flats/10574490_916149055066311_9166328785546283049_n.jpg"  onClick="changeMainImage(0)" style="height:100%; float:left; opacity:1;">
+	<img id="image1" src="flats/10570496_916149141732969_7109096628975262258_n.jpg" onClick="changeMainImage(1)" style="height:100%; float:left; margin-left:10px">
+	<img id="image2" src="flats/10551061_916148528399697_2928115284938901327_n.jpg" onClick="changeMainImage(2)" style="height:100%; float:left; margin-left:10px">
+	<img id="image3" src="flats/10527332_916148831733000_6703671114500597545_n.jpg" onClick="changeMainImage(3)" style="height:100%; float:left; margin-left:10px">
+	<img id="image4" src="flats/10418909_916147995066417_5982149672785673479_n.jpg" onClick="changeMainImage(4)" style="height:100%; float:left; margin-left:10px">
+	<img id="image5" src="flats/10392409_916148698399680_5145691371804763473_n.jpg" onClick="changeMainImage(5)" style="height:100%; float:left; margin-left:10px">
+	<img id="image6" src="flats/10377164_916148838399666_7791326558864167979_n.jpg" onClick="changeMainImage(6)" style="height:100%; float:left; margin-left:10px">
+	<img id="image7" src="flats/10355722_916148251733058_3549712943006763498_n.jpg" onClick="changeMainImage(7)" style="height:100%; float:left; margin-left:10px">
+	<img id="image8" src="flats/1458707_916148071733076_7972319385168546822_n.jpg" onClick="changeMainImage(8)" style="height:100%; float:left; margin-left:10px">
+	<img id="image9" src="flats/995614_916148801733003_3320039399786898288_n.jpg" onClick="changeMainImage(9)" style="height:100%; float:left; margin-left:10px">
+	<img id="image10" src="flats/7357_916149121732971_4074852418261063885_n.jpg" onClick="changeMainImage(10)" style="height:100%; float:left; margin-left:10px">
 </div>
 
 </body>

@@ -8,24 +8,27 @@
 
 <body>
 
-<div id="box">
-	<img id="mainImage" onClick="showLargeImage()" src="london_fashion_week/picture30.jpg" style="height:100%; float:right">
-</div>
-<img src="next.jpg" type="button" onClick="nextImage()" style="width:30px; float:right">
-<img src="prev.jpg" type="button" onClick="prevImage()" style="width:30px; float:right; position:relative; right:10px">
-<div id="lowerBox">
-	<img src="london_fashion_week/picture30.jpg" onClick="changeMainImage(0)" style="height:100%; float:left">
-	<img src="london_fashion_week/picture26.jpg" onClick="changeMainImage(1)" style="height:100%; float:left; margin-left:10px">
-	<img src="london_fashion_week/picture24.jpg" onClick="changeMainImage(2)" style="height:100%; float:left; margin-left:10px">
-	<img src="london_fashion_week/picture20.jpg" onClick="changeMainImage(3)" style="height:100%; float:left; margin-left:10px">
-	<img src="london_fashion_week/picture13.jpg" onClick="changeMainImage(4)" style="height:100%; float:left; margin-left:10px">
-	<img src="london_fashion_week/picture6.jpg" onClick="changeMainImage(5)" style="height:100%; float:left; margin-left:10px">
-	<img src="london_fashion_week/picture4.jpg" onClick="changeMainImage(6)" style="height:100%; float:left; margin-left:10px">
-	<img src="london_fashion_week/picture2.jpg" onClick="changeMainImage(7)" style="height:100%; float:left; margin-left:10px">
-</div>
-
 <div id="image">
-	<img id="largeImage" onClick="hideLargeImage()" style="width:100%">
+	<img id="largeImage" onClick="hideLargeImage()" title="Click to reduce size" style="max-width:100%; max-height:100%; float:right; opacity:1">
+</div>
+<div id="box">
+	<img id="mainImage" onClick="showLargeImage()" src="london_fashion_week/picture30.jpg" title="Click to Enlarge" style="height:100%; float:right; opacity:1">
+</div>
+<div id="boxFooter">
+	<img src="next.jpg" type="button" onClick="nextImage()" style="width:30px; float:right; position:relative; top:1px">
+	<img src="prev.jpg" type="button" onClick="prevImage()" style="width:30px; float:right; position:relative; right:10px; top:1px">
+	<button type="button" onClick="showLargeImage()" style="float:right; position:relative; right: 20px; top:2px">Enlarge</button>
+	<button type="button" onClick="hideThumbnails()" style="float:right; position:relative; right: 25px; top:2px">Toggle Thumbnails</button>
+</div>
+<div id="lowerBox">
+	<img id="image0" src="london_fashion_week/picture30.jpg" onClick="changeMainImage(0)" style="height:100%; float:left; opacity:1">
+	<img id="image1" src="london_fashion_week/picture26.jpg" onClick="changeMainImage(1)" style="height:100%; float:left; margin-left:10px">
+	<img id="image2" src="london_fashion_week/picture24.jpg" onClick="changeMainImage(2)" style="height:100%; float:left; margin-left:10px">
+	<img id="image3" src="london_fashion_week/picture20.jpg" onClick="changeMainImage(3)" style="height:100%; float:left; margin-left:10px">
+	<img id="image4" src="london_fashion_week/picture13.jpg" onClick="changeMainImage(4)" style="height:100%; float:left; margin-left:10px">
+	<img id="image5" src="london_fashion_week/picture6.jpg" onClick="changeMainImage(5)" style="height:100%; float:left; margin-left:10px">
+	<img id="image6" src="london_fashion_week/picture4.jpg" onClick="changeMainImage(6)" style="height:100%; float:left; margin-left:10px">
+	<img id="image7" src="london_fashion_week/picture2.jpg" onClick="changeMainImage(7)" style="height:100%; float:left; margin-left:10px">
 </div>
 
 </body>
