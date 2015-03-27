@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Hannah's Website</title>
+	<title>Hannah Park Photography</title>
 	<link rel="stylesheet" href="style.css">
 	<script src="script.js"></script>
 	<style>
@@ -9,6 +9,7 @@
 		background-image:url("background.jpg");
 		background-repeat:no-repeat;
 		background-attachment:fixed;
+		background-size:100%;
 	}
 	</style>
 </head>
@@ -20,17 +21,15 @@
 			<h3>HANNAH PARK</h3>
 		</div>
 		<div id="nav">
-			<p>
-				<a href="about.html" target="iframe_content">ABOUT</a><br>
-				<a href="contact.html" target="iframe_content">CONTACT</a><br>
-				<a href="editorial.html" target="iframe_content">EDITORIAL</a><br>
-				<a href="london_fashion_week.html" target="iframe_content">LONDON FASHION WEEK</a><br>
-				<a href="flats.html" target="iframe_content">FLATS</a><br>
-				<a href="futurism.html" target="iframe_content">FUTURISM</a><br>
-				<a href="lingerie.html" target="iframe_content">LINGERIE</a><br>
-				<a href="narratives.html" target="iframe_content">NARRATIVES</a><br>
-				<a href="beauty_portraits.html" target="iframe_content">BEAUTY PORTRAITS</a><br>
-			</p>
+			<a onClick="changeSrc('about')">ABOUT</a><br>
+			<a onClick="changeSrc('contact')">CONTACT</a><br>
+			<a onClick="changeSrc('editorial')">EDITORIAL</a><br>
+			<a onClick="changeSrc('london_fashion_week')">LONDON FASHION WEEK</a><br>
+			<a onClick="changeSrc('flats')">FLATS</a><br>
+			<a onClick="changeSrc('futurism')">FUTURISM</a><br>
+			<a onClick="changeSrc('lingerie')">LINGERIE</a><br>
+			<a onClick="changeSrc('narratives')">NARRATIVES</a><br>
+			<a onClick="changeSrc('beauty_portraits')">BEAUTY PORTRAITS</a><br>
 		</div>
 	</div>
 	<div id="rightSection">
@@ -38,10 +37,5 @@
 	</div>
 </div>
 
-<div id="image">
-	<img id="largeImage" onClick="hideLargeImage()">
-</div>
-
 </body>
-
 </html>

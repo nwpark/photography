@@ -8,21 +8,24 @@
 
 <body>
 
-<div id="box">
-	<img id="mainImage" onClick="showLargeImage()" src="futurism\SECOND CUP.jpg" style="height:100%; float:right">
-</div>
-<img src="next.jpg" type="button" onClick="nextImage()" style="width:30px; float:right">
-<img src="prev.jpg" type="button" onClick="prevImage()" style="width:30px; float:right; position:relative; right:10px">
-<div id="lowerBox">
-	<img src="futurism\SECOND CUP.jpg" style="height:100%; float:left">
-	<img src="futurism\ROSE TEST.jpg" style="height:100%; float:left; margin-left:10px">
-	<img src="futurism\PINEAPPLE.jpg" style="height:100%; float:left; margin-left:10px">
-	<img src="futurism\IMG_9245.jpg" style="height:100%; float:left; margin-left:10px">
-	<img src="futurism\hananh.jpg" style="height:100%; align:center; margin-left:10px">
-</div>
-
 <div id="image">
-	<img id="largeImage" onClick="hideLargeImage()" style="width:100%">
+	<img id="largeImage" onClick="hideLargeImage()" title="Click to reduce size" style="width:100%; z-index:1; opacity:1">
+</div>
+<div id="box">
+	<img id="mainImage" onClick="showLargeImage()" src="futurism\SECOND CUP.jpg" title="Click to Enlarge" style="height:100%; float:right; opacity:1">
+</div>
+<div id="boxFooter">
+	<img src="next.jpg" type="button" onClick="nextImage()" style="width:30px; float:right; position:relative; top:1px">
+	<img src="prev.jpg" type="button" onClick="prevImage()" style="width:30px; float:right; position:relative; right:10px; top:1px">
+	<button type="button" onClick="showLargeImage()" style="float:right; position:relative; right: 20px; top:2px">Enlarge</button>
+	<button type="button" onClick="hideThumbnails()" style="float:right; position:relative; right: 25px; top:2px">Toggle Thumbnails</button>
+</div>
+<div id="lowerBox">
+	<img id="image0" src="futurism\SECOND CUP.jpg" onClick="changeMainImage(0)" style="height:100%; float:left; opacity:1">
+	<img id="image1" src="futurism\ROSE TEST.jpg" onClick="changeMainImage(1)" style="height:100%; float:left; margin-left:10px">
+	<img id="image2" src="futurism\PINEAPPLE.jpg" onClick="changeMainImage(2)" style="height:100%; float:left; margin-left:10px;">
+	<img id="image3" src="futurism\IMG_9245.jpg" onClick="changeMainImage(3)" style="height:100%; float:left; margin-left:10px">
+	<img id="image4" src="futurism\hananh.jpg" onClick="changeMainImage(4)" style="height:100%; align:center; margin-left:10px">
 </div>
 
 </body>
