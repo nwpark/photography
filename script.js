@@ -22,16 +22,6 @@ var london_fashion_weekPics = ["london_fashion_week/picture30.jpg",
 				"london_fashion_week/picture6.jpg",
 				"london_fashion_week/picture4.jpg",
 				"london_fashion_week/picture2.jpg"]
-var lingeriePics = ["lingerie/Image eighteen.jpg",
-			"lingerie/Image fourteen.jpg",
-			"lingerie/Image six.jpg",
-			"lingerie/Image thirteen.jpg",
-			"lingerie/Image thirteen_1.jpg",
-			"lingerie/Image twelve.jpg"]
-var beauty_portraitsPics = ["beauty_portraits/11034120_10153147014415409_682121217_o.jpg",
-			"beauty_portraits/11078708_10153147014200409_1419223267_o.jpg",
-			"beauty_portraits/11086571_10153147014975409_951779125_o.jpg",
-			"beauty_portraits/11097128_10153147013605409_673562300_o.jpg"]
 var i = 0;
 var currentSrc = "futurism";
 function hideLargeImage() {
@@ -80,18 +70,6 @@ function nextImage() {
 		}
 		picture.src = london_fashion_weekPics[i];
 	}
-	if(picture.src.indexOf("lingerie") > -1) {
-		if(lingeriePics[i] == null) {
-			i=0;
-		}
-		picture.src = lingeriePics[i];
-	}
-	if(picture.src.indexOf("beauty_portraits") > -1) {
-		if(beauty_portraitsPics[i] == null) {
-			i=0;
-		}
-		picture.src = beauty_portraitsPics[i];
-	}
 	for(j=0; j<50; j++) {
 		if(document.getElementById('image'+j) != null) {
 			document.getElementById('image'+j).style.opacity="";
@@ -119,18 +97,6 @@ function prevImage() {
 			i = london_fashion_weekPics.length -1;
 		}
 		picture.src = london_fashion_weekPics[i];
-	}
-	if(picture.src.indexOf("lingerie") > -1) {
-		if(lingeriePics[i] == null) {
-			i = lingeriePics.length -1;
-		}
-		picture.src = lingeriePics[i];
-	}
-	if(picture.src.indexOf("beauty_portraits") > -1) {
-		if(beauty_portraitsPics[i] == null) {
-			i = beauty_portraitsPics.length -1;
-		}
-		picture.src = beauty_portraitsPics[i];
 	}
 	for(j=0; j<50; j++) {
 		if(document.getElementById('image'+j) != null) {
