@@ -30,8 +30,7 @@ var lingeriePics = ["lingerie/Image eighteen.jpg",
 			"lingerie/Image twelve.jpg"]
 var beauty_portraitsPics = ["beauty_portraits/11034120_10153147014415409_682121217_o.jpg",
 			"beauty_portraits/11078708_10153147014200409_1419223267_o.jpg",
-			"beauty_portraits/11086571_10153147014975409_951779125_o.jpg",
-			"beauty_portraits/11097128_10153147013605409_673562300_o.jpg"]
+			"beauty_portraits/11086571_10153147014975409_951779125_o.jpg"]
 var i = 0;
 var currentSrc = "futurism";
 function hideLargeImage() {
