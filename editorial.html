@@ -1,12 +1,40 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Flats</title>
+	<title>Editorial</title>
 	<link rel="stylesheet" href="style.css">
 	<script src="script.js"></script>
 </head>
 
 <body>
+
+<div id="image">
+	<img id="largeImage" onClick="hideLargeImage()" title="Click to reduce size" style="max-width:100%; max-height:100%; float:right; opacity:1">
+</div>
+<div id="box">
+	<img id="mainImage" onClick="showLargeImage()" src="editorial/_DSC0232.jpg" style="height:100%; float:right; opacity:1">
+</div>
+<div id="boxFooter">
+	<img src="next.jpg" type="button" onClick="nextImage()" style="width:30px; float:right; position:relative; top:1px">
+	<img src="prev.jpg" type="button" onClick="prevImage()" style="width:30px; float:right; position:relative; right:10px; top:1px">
+	<button type="button" onClick="showLargeImage()" style="float:right; position:relative; right: 20px; top:2px">Enlarge</button>
+	<button type="button" onClick="hideThumbnails()" style="float:right; position:relative; right: 25px; top:2px">Toggle Thumbnails</button>
+</div>
+<div id="lowerBox">
+	<img id="image0" src="editorial/_DSC0232.jpg" onClick="changeMainImage(0)" style="height:100%; float:left; margin-right:10px; margin-bottom:10px; opacity:1;">
+	<img id="image1" src="editorial/_DSC0238_2.jpg" onClick="changeMainImage(1)" style="height:100%; float:left; margin-right:10px; margin-bottom:10px">
+	<img id="image2" src="editorial/_DSC0354.jpg" onClick="changeMainImage(2)" style="height:100%; float:left; margin-right:10px; margin-bottom:10px">
+	<img id="image3" src="editorial/_DSC0359.jpg" onClick="changeMainImage(3)" style="height:100%; float:left; margin-right:10px; margin-bottom:10px">
+	<img id="image4" src="editorial/_DSC0360.jpg" onClick="changeMainImage(4)" style="height:100%; float:left; margin-right:10px; margin-bottom:10px">
+	<img id="image5" src="editorial/_DSC0375.jpg" onClick="changeMainImage(5)" style="height:100%; float:left; margin-right:10px; margin-bottom:10px">
+	<img id="image6" src="editorial/denim 3.jpg" onClick="changeMainImage(6)" style="height:100%; float:left; margin-right:10px; margin-bottom:10px">
+	<img id="image7" src="editorial/denim 4.jpg" onClick="changeMainImage(7)" style="height:100%; float:left; margin-right:10px; margin-bottom:10px">
+	<img id="image8" src="editorial/emma 21.jpg" onClick="changeMainImage(8)" style="height:100%; float:left; margin-right:10px; margin-bottom:10px">
+	<img id="image9" src="editorial/emma 25.jpg" onClick="changeMainImage(9)" style="height:100%; float:left; margin-right:10px; margin-bottom:10px">
+	<img id="image10" src="editorial/emma 27.jpg" onClick="changeMainImage(10)" style="height:100%; float:left; margin-right:10px; margin-bottom:10px">
+	<img id="image11" src="editorial/emma 33.jpg" onClick="changeMainImage(9)" style="height:100%; float:left; margin-right:10px; margin-bottom:10px">
+	<img id="image12" src="editorial/Hannah Denim Project_0007.jpg" onClick="changeMainImage(10)" style="height:100%; float:left; margin-right:10px; margin-bottom:10px">
+</div>
 
 </body>
 

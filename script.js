@@ -2,7 +2,14 @@ var futurismPics = ["futurism/SECOND CUP.jpg",
 			"futurism/ROSE TEST.jpg", 
 			"futurism/PINEAPPLE.jpg", 
 			"futurism/IMG_9245.jpg",
-			"futurism/hananh.jpg"]
+			"futurism/hananh.jpg",
+			"futurism/TEACUP TEST.jpg", 
+			"futurism/Nicole 6.jpg", 
+			"futurism/Nicole 11.jpg", 
+			"futurism/nicole 14.jpg",
+			"futurism/nicole 21.jpg",
+			"futurism/TEN TEST SHOOT.jpg",
+			"futurism/TWELEVE TEST SHOOT.jpg"]
 var flatsPics = ["flats/10574490_916149055066311_9166328785546283049_n.jpg",
 			"flats/10570496_916149141732969_7109096628975262258_n.jpg",
 			"flats/10551061_916148528399697_2928115284938901327_n.jpg",
@@ -27,10 +34,33 @@ var lingeriePics = ["lingerie/Image eighteen.jpg",
 			"lingerie/Image six.jpg",
 			"lingerie/Image thirteen.jpg",
 			"lingerie/Image thirteen_1.jpg",
-			"lingerie/Image twelve.jpg"]
+			"lingerie/Image twelve.jpg",
+			"lingerie/hannahp0023.jpg",
+			"lingerie/hannahp0045.jpg",
+			"lingerie/hannahp0058.jpg",
+			"lingerie/hannahp0109.jpg"]
 var beauty_portraitsPics = ["beauty_portraits/11034120_10153147014415409_682121217_o.jpg",
 			"beauty_portraits/11078708_10153147014200409_1419223267_o.jpg",
 			"beauty_portraits/11086571_10153147014975409_951779125_o.jpg"]
+var editorialPics = ["editorial/_DSC0232.jpg",
+			"editorial/_DSC0238_2.jpg",
+			"editorial/_DSC0354.jpg",
+			"editorial/_DSC0359.jpg",
+			"editorial/_DSC0360.jpg",
+			"editorial/_DSC0375.jpg",
+			"editorial/denim 3.jpg",
+			"editorial/denim 4.jpg",
+			"editorial/emma 21.jpg",
+			"editorial/emma 25.jpg",
+			"editorial/emma 27.jpg",
+			"editorial/emma 33.jpg",
+			"editorial/Hannah Denim Project_0007.jpg"]
+var narrativesPics = ["narratives/abi.jpg",
+			"narratives/IMG_9813.JPG",
+			"narratives/IMG_9817.JPG",
+			"narratives/t.jpg",
+			"narratives/v.jpg",
+			"narratives/vv.jpg"]
 var i = 0;
 var currentSrc = "futurism";
 function hideLargeImage() {
@@ -91,6 +121,18 @@ function nextImage() {
 		}
 		picture.src = beauty_portraitsPics[i];
 	}
+	if(picture.src.indexOf("editorial") > -1) {
+		if(editorialPics[i] == null) {
+			i=0;
+		}
+		picture.src = editorialPics[i];
+	}
+	if(picture.src.indexOf("narratives") > -1) {
+		if(narrativesPics[i] == null) {
+			i=0;
+		}
+		picture.src = narrativesPics[i];
+	}
 	for(j=0; j<50; j++) {
 		if(document.getElementById('image'+j) != null) {
 			document.getElementById('image'+j).style.opacity="";
@@ -130,6 +172,18 @@ function prevImage() {
 			i = beauty_portraitsPics.length -1;
 		}
 		picture.src = beauty_portraitsPics[i];
+	}
+	if(picture.src.indexOf("editorial") > -1) {
+		if(editorialPics[i] == null) {
+			i = editorialPics.length -1;
+		}
+		picture.src = editorialPics[i];
+	}
+	if(picture.src.indexOf("narratives") > -1) {
+		if(narrativesPics[i] == null) {
+			i = narrativesPics.length -1;
+		}
+		picture.src = narrativesPics[i];
 	}
 	for(j=0; j<50; j++) {
 		if(document.getElementById('image'+j) != null) {

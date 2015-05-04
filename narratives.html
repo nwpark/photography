@@ -1,12 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Flats</title>
+	<title>Narratives</title>
 	<link rel="stylesheet" href="style.css">
 	<script src="script.js"></script>
 </head>
 
 <body>
+
+<div id="image">
+	<img id="largeImage" onClick="hideLargeImage()" title="Click to reduce size" style="max-width:100%; max-height:100%; float:right; opacity:1">
+</div>
+<div id="box">
+	<img id="mainImage" onClick="showLargeImage()" src="narratives/abi.jpg" style="height:100%; float:right; opacity:1">
+</div>
+<div id="boxFooter">
+	<img src="next.jpg" type="button" onClick="nextImage()" style="width:30px; float:right; position:relative; top:1px">
+	<img src="prev.jpg" type="button" onClick="prevImage()" style="width:30px; float:right; position:relative; right:10px; top:1px">
+	<button type="button" onClick="showLargeImage()" style="float:right; position:relative; right: 20px; top:2px">Enlarge</button>
+	<button type="button" onClick="hideThumbnails()" style="float:right; position:relative; right: 25px; top:2px">Toggle Thumbnails</button>
+</div>
+<div id="lowerBox">
+	<img id="image0" src="narratives/abi.jpg" onClick="changeMainImage(0)" style="height:100%; float:left; margin-right:10px; margin-bottom:10px; opacity:1;">
+	<img id="image1" src="narratives/IMG_9813.JPG" onClick="changeMainImage(1)" style="height:100%; float:left; margin-right:10px; margin-bottom:10px">
+	<img id="image2" src="narratives/IMG_9817.JPG" onClick="changeMainImage(2)" style="height:100%; float:left; margin-right:10px; margin-bottom:10px">
+	<img id="image3" src="narratives/t.jpg" onClick="changeMainImage(3)" style="height:100%; float:left; margin-right:10px; margin-bottom:10px">
+	<img id="image4" src="narratives/v.jpg" onClick="changeMainImage(4)" style="height:100%; float:left; margin-right:10px; margin-bottom:10px">
+	<img id="image5" src="narratives/vv.jpg" onClick="changeMainImage(5)" style="height:100%; float:left; margin-right:10px; margin-bottom:10px">
+</div>
 
 </body>
 
