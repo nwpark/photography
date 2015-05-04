@@ -69,6 +69,13 @@ html, body {height:98%;}
 	display:none;
 	border:1px solid grey;
 }
+#bioBox {
+	font-family:arial;
+	color:grey;
+	font-size:75%;
+	position:relative;
+	top:30px;
+}
 a:link {
 	color:grey;
 	text-decoration:none;
